@@ -1,0 +1,139 @@
+body {
+  color: #404040;
+  /*background-image: url(img/fondo.jpg);*/
+}
+
+.registro-titulo {
+	width: 270px;
+	line-height: 43px;
+	font-size: 19px;
+	font-weight: 500;
+	margin: 20px auto 20px;
+	color: white;
+	text-align: center;
+	background: #12889c;
+	border-radius: 5px;
+
+}
+
+.registro-formulario {
+	margin: 0 auto;
+	width: 270px;
+	padding: 20px;
+	background: #e3f2f2;
+	border-radius: 4px;
+
+}
+
+.registro-opt {
+	height: 42px;
+	margin-bottom: 15px;
+	padding: 4px;
+	padding-top: 6px;
+	background: #f5f5f5;
+	border-radius: 2px;
+	text-align: center;
+	background-image: linear-gradient(to bottom, #12889c, #12889c);
+
+}
+
+
+.registro-opt-input {
+  color:black;
+  align-content: center;
+  border-radius: 3px;
+  margin-top: 5px;
+  width: 150px;
+  height: 23px;
+
+}
+
+.registro-opt-label {
+  float: left;
+  width: 50%;
+  line-height: 32px;
+  color: gray;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.registro-opt-input:checked + .registro-opt-label {
+  font-weight: 500;
+  color: #434248;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  background: white;
+  border-radius: 2px;
+  background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+  
+}
+
+.registro-input{
+	display: block;
+	width: 100%;
+	height: 38px;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #d8d8d8;
+
+}
+
+.registro-input:focus {
+	border-color: #1e9ce6;
+	outline: 0;
+
+}
+
+.registro-btn {
+	display: block;
+	width: 100%;
+	height: 42px;
+	margin-top: 25px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #494d59;
+	text-align: center;
+	background: #fcfcfc;
+	border: 1px solid;
+	border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+	border-radius: 2px;
+	cursor: pointer;
+	background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+
+}
+
+.registro-btn:active {
+  background: #eee;
+  border-color: #c3c3c3 #d1d1d1 #d8d8d8;
+  background-image: linear-gradient(to bottom, #eeeeee, #fcfcfc);
+}
+
+.registro-btn:focus {
+  outline: 0;
+}
+
+.registro-btn:hover {
+	border-color: #12889c;
+	
+}
+
+.icono-form{
+	width: 90px;
+	height: 149px;
+	display: block;
+	margin: 20px auto 0px;
+}
+
+body, html{
+	height: 100%
+	padding:0;
+
+}
+.carusel {
+	height: 66,67%;
+	margin-bottom: 0;
+}
+.carousel-inner, .carousel-inner > .item > img {
+	height: 100%
+}
