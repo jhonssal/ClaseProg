@@ -119,7 +119,7 @@ body {
 }
 
 .icono-form{
-	width: 90px;
+	width: 149px;
 	height: 149px;
 	display: block;
 	margin: 20px auto 0px;
@@ -136,4 +136,10 @@ body, html{
 }
 .carousel-inner, .carousel-inner > .item > img {
 	height: 100%
+}
+
+.profile {
+    position: absolute;
+    top: 70px;
+    right: 15px;
 }
