@@ -49,73 +49,38 @@
   </div>
   <div class="card-body">
    
-<!-- formulario de subir actividad -->    
-  	<form action="upload.php" method="post" enctype="multipart/form-data">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="nombreAct">Nombre de la actividad:</label>
-      <input type="text" class="form-control" id="nombreAct" placeholder="Nombre">
-    </div>
-    <div class="form-group col-md-3">
-      <label for="gradoList">Grado</label>
-     	<select class="custom-select" class="form-control" id="gradoList">
-      		<option value="null">Seleccione...</option>
-	  		<option value="1">Sexto</option>
-  			<option value="2">Séptimo</option>
-  			<option value="3">Octavo</option>
-  			<option value="4">Noveno</option>
-  			<option value="5">Décimo</option>
-  			<option value="6">Once</option>
-		</select>
-    </div>
-    <div class="form-group col-md-3">
-    	<label for="grupoList">Grupo</label>
-     	<select class="custom-select" class="form-control" id="grupoList">
-      		<option value="null">Seleccione...</option>
-	  		<option value="1">A</option>
-  			<option value="2">B</option>
-  			<option value="3">C</option>
-		</select>
-    </div>
-  </div>
-
-  <div class="form-row text-right">
-  <div class="form-group col-2 my-auto">
-    <label for="fechaAct">Fecha de entrega:</label>
-  </div>
-  <div class="form-group col-2 my-auto">
-  		<input type="date" class="form-control mx-auto" id="fechaAct" style="width: 11rem; text-align: center;">
-  	</div>
-  <div class="form-group col-2 my-auto">
-    <label for="horaAct">Hora:</label>
-  </div>
-  <div class="form-group col-2 my-auto">
-  		<input type="time" class="form-control mx-auto" id="horaAct" style="width: 8rem; text-align: center;">
-  	</div>
-  <div class="form-group col-3 my-auto"> 
-  	<label for="intentosAct">Numero de intentos:</label>
-  </div>
-  <div class="form-group col-1 my-auto">
-  		<input type="number" id="intentosAct" min="1" max="5">
-  	</div>
-  </div>
-
-  <div class="form-row mt-2">
-  	<div class="form-group col-2 my-auto text-center">
-  		<label>Seleccionar archivo:</label>
-  	</div>
-    <div class="form-group col-10 my-3">
-    	<label class="custom-file-label" for="userfile" >Elegir archivo</label>
-    	<input type="file" class="custom-file-input" id="uploadFile" name="userfile">
-    </div>
-  </div>
-
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  
-</form>
-
-
-  </div>
+<!-- tabla para ver actividades-->    
+<div class="container">
+<table class="table">
+	<thead class="thead-dark">
+		<tr>
+			<th>Nombre de la actividad</th>
+			<th>Fecha Limite</th>
+			<th>Hora limite</th>
+			<th>Numero de intentos</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>actividad 1</td>
+			<td>29 junio</td>
+			<td>10pm</td>
+			<td>99</td>
+		</tr>
+		<tr>
+			<td>actividad 1</td>
+			<td>29 junio</td>
+			<td>10pm</td>
+			<td>99</td>
+		</tr>
+		<tr>
+			<td>actividad 1</td>
+			<td>29 junio</td>
+			<td>10pm</td>
+			<td>99</td>
+		</tr>
+	</tbody>
+</table>
 </div>
 </div>
 
