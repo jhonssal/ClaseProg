@@ -1,12 +1,9 @@
-<?php 
-require('Vista_Asignaturas.php'); 
-?>
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Modulo Asignaturas</title>
+	<title>Vista Asignaturas</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
@@ -35,53 +32,46 @@ require('Vista_Asignaturas.php');
 		</div>
   </div>
   
-	<!-- card de subir actividad, actividades evaluativas, registro de notas, registro de asistencia -->
-  <div class="container-fluid my-3" style="width: 64rem">
+<div class="container-fluid my-3" style="width: 64rem">
 <div class="card">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-			<li class="nav-item">
-				<a class="nav-link active" href="#">Asignaturas</a>
-			</li>
-      <li class="nav-item">
-        <a class="nav-link" href="crear_actividad.html">Subir Actividad</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="actividades_evaluativas.html">Actividades evaluativas</a>
-      </li>
- 	  <li class="nav-item">
-        <a class="nav-link" href="registro_notas.html">Registro de notas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="registro_asistencia.html">Registro de asistencia</a>
-      </li>
-    </ul>
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+		      <div align='center'><h5 style="color:#007bff";> Actividad a realizar</h5>
+	      </ul>
+	        </div>
+ <!-- espacio donde el estudiante sube actividad -->
+	
+ <div class="card-body">
+	<div class="container">
+  <p>Titulo de la actividad</p>
+  <div class="container card bg-secondary text-white">
+    <div  class="card-body">Descripcion de la actividad</div>
   </div>
-  <div class="card-body">
-<!-- Tabla que muestra las asignaturas -->
-<div class="container">
-<table class="table table-hover ">
-   <thead class="thead-dark">
-  <tr>
-    <th>Nombre Asignatura</th>
-    <th>Nombre docente</th>
-    <th>Email</th>
-  </tr>
-  </thead>
-
-<?php
-for ($i=0; $i < count($datovi); $i++) { 
-  consultar_Asignaturas($datovi[$i]);
-}
-?>
-
-</table>
-  <button class="btn btn-outline-primary"><a href="javascript:history.go(-1);">Atras</a>
-  </button>
   
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<div class="form-row mt-2">
+  	<div class="form-group col-2 my-auto text-center">
+  		<label>Seleccionar archivo:</label>
+  	</div>
+    <div class="form-group col-10 my-3">
+    	<label class="custom-file-label" for="userfile" >Elegir archivo</label>
+    	<input type="file" class="custom-file-input" id="uploadFile" name="userfile">
+    </div>
+  </div>
 
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  
+</form>
+            <br>
+	          <div class="container">
+                 <button class="btn btn-outline-primary"><a href="javascript:history.go(-1);">Atras</a>
+	               </button>
+            </div>
+
+  </div>
 </div>
 </div>
+
 
 </body>
 </html>

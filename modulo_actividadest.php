@@ -1,3 +1,6 @@
+<?php 
+require('Vista_actividades.php'); 
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,7 +40,7 @@
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
-        <a class="nav-link" href="Modulo_Asignaturasest.php">Actividades</a>
+        <a class="nav-link" href="#">Actividades</a>
 			</li>
 			<li class="nav-item">
         <a class="nav-link" href="modulo_notasest.html">Ver Notas</a>
@@ -51,36 +54,25 @@
    
 <!-- tabla para ver actividades-->    
 <div class="container">
-<table class="table">
-	<thead class="thead-dark">
+	<table class="table table-hover ">
+		 <thead class="thead-dark">
 		<tr>
-			<th>Nombre de la actividad</th>
-			<th>Fecha Limite</th>
+			<th>Nombre Actividad</th>
+			<th>Fecha limite</th>
 			<th>Hora limite</th>
-			<th>Numero de intentos</th>
+			<th>N° Intentos</th>
 		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>actividad 1</td>
-			<td>29 junio</td>
-			<td>10pm</td>
-			<td>99</td>
-		</tr>
-		<tr>
-			<td>actividad 1</td>
-			<td>29 junio</td>
-			<td>10pm</td>
-			<td>99</td>
-		</tr>
-		<tr>
-			<td>actividad 1</td>
-			<td>29 junio</td>
-			<td>10pm</td>
-			<td>99</td>
-		</tr>
-	</tbody>
-</table>
+		</thead>
+	
+	<?php
+	for ($i=0; $i < count($datoact); $i++) { 
+		consultar_act($datoact[$i]);
+	}
+	?>
+	
+	</table>
+		<button class="btn btn-outline-primary"><a href="javascript:history.go(-1);">Atras</a>
+		</button>
 </div>
 </div>
 
