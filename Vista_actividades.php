@@ -24,7 +24,7 @@ $datoact = [$act1,$act2,$act3];
 
 function consultar_act($datoact){
 	echo '<tr>';
-	echo '<td><a href="modulo_haceractividadest.php"><img src="img/Folder.png" class="rounded" >'.$datoact->Nombre_actividad.'</a></td>';
+	echo '<td><a href="modulo_haceractividadest.php"><img src="img/actividad.png" class="rounded" >'.$datoact->Nombre_actividad.'</a></td>';
 	echo '<td>'.$datoact->Fecha_limte.'</td>';
 	echo '<td>'.$datoact->Hora_limite.'</td>';
 	echo '<td>'.$datoact->Numero_intentos.'</td>';
