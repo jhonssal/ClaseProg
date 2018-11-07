@@ -43,11 +43,23 @@
 	
  <div class="card-body">
 	<div class="container">
-  <p>Titulo de la actividad</p>
-  <div class="container card bg-secondary text-white">
-    <div  class="card-body">Descripcion de la actividad</div>
+  <form>
+<div>
+<p>Click en la imagen para descargar el documento</p>
+ <a href="img/actividad.png" download="actividad">
+  <img src="img/actividad.png"  >
+</a>
+</div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Descripcion</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
+  </form>
+		</div>
   
+	
+
 	<form action="upload.php" method="post" enctype="multipart/form-data">
 		<div class="form-row mt-2">
   	<div class="form-group col-2 my-auto text-center">
