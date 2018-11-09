@@ -35,7 +35,7 @@ require('Vista_Asignaturas.php');
 		</div>
   </div>
   
-	<!-- card de subir actividad, actividades evaluativas, registro de notas, registro de asistencia -->
+	<!-- card asignaturas -->
   <div class="container-fluid my-3" style="width: 64rem">
 <div class="card">
   <div class="card-header">
@@ -49,7 +49,7 @@ require('Vista_Asignaturas.php');
   <div class="card-body">
 
   <div class="container">
-<table class="table table-hover ">
+<table class="table table-hover shadow p-4 mb-4 bg-white ">
    <thead class="thead-dark">
   <tr>
     <th>Nombre Asignatura</th>
