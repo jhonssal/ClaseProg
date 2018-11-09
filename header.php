@@ -12,7 +12,7 @@
 		<div class="page-header">
 			<nav class="navbar sticky-top navbar-expand-sm bg-light navbar-dark"> <!--style="background-color: #e3f2fd;  -->
 				<div class="container-fluid">
-						<a class="navbar-brand" href="/index.html">
+						<a class="navbar-brand" href="index.php">
               <img src="img/user.png" style="width: 100px;">
             </a>
 					    <ul class="navbar-nav">

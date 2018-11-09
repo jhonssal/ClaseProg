@@ -14,7 +14,7 @@
 				<div class="container-fluid">  
                     
                     <div class="col-2">
-					<a class="navbar-brand" href="/index.html">
+					<a class="navbar-brand" href="index.php">
                         <img src="img/user.png" style="width: 100px;">
                     </a>
                     </div>

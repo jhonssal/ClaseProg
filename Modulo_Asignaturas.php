@@ -1,5 +1,6 @@
 <?php 
 require('Vista_Asignaturas.php'); 
+include('headeri.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +14,7 @@ require('Vista_Asignaturas.php');
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-<!-- codigo para importar header -->
-<object type="text/html" data="headeri.php" width="100%" height="100%"></object>
-  
+
 	<!-- card de subir actividad, actividades evaluativas, registro de notas, registro de asistencia -->
   <div class="container-fluid my-3" style="width: 64rem">
 <div class="card">
