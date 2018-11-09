@@ -32,19 +32,32 @@
 		</div>
   </div>
   
+<!-- card de ver actividad, actividades evaluativas, registro de notas, registro de asistencia -->
 <div class="container-fluid my-3" style="width: 64rem">
-<div class="card">
-      <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs">
-		      <div align='center'><h5 style="color:#007bff";> Actividad a realizar</h5>
-	      </ul>
+	<div class="card">
+		<div class="card-header">
+			<ul class="nav nav-tabs card-header-tabs">
+				<li class="nav-item">
+					<a class="nav-link" href="modulo_actividadest.php">Actividades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="modulo_notasest.html">Ver Notas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="modulo_asistenciaest.html">Ver Asistencia</a>
+				</li>
+			</ul>
+		</div>
+	      
+		      <div class="shadow-sm p-4 mb-4 bg-white" align='center'><h5 style="color:#007bff";> Actividad a realizar</h5>
+	    
 	        </div>
  <!-- espacio donde el estudiante sube actividad -->
 	
  <div class="card-body">
 	<div class="container">
   <form>
-<div>
+<div align='center'>
 <p>Click en la imagen para descargar el documento</p>
  <a href="img/actividad.png" download="actividad">
   <img src="img/actividad.png"  >

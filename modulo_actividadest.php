@@ -34,7 +34,7 @@ require('Vista_actividades.php');
 	</div>
 
 
-<!-- card de subir actividad, actividades evaluativas, registro de notas, registro de asistencia -->
+<!-- card de ver actividad, actividades evaluativas, registro de notas, registro de asistencia -->
 <div class="container-fluid my-3" style="width: 64rem">
 <div class="card">
   <div class="card-header">
@@ -54,7 +54,7 @@ require('Vista_actividades.php');
    
 <!-- tabla para ver actividades-->    
 <div class="container">
-	<table class="table table-hover ">
+	<table class="table table-hover shadow p-4 mb-4 bg-white">
 		 <thead class="thead-dark">
 		<tr>
 			<th>Nombre Actividad</th>

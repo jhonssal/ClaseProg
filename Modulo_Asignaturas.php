@@ -60,7 +60,7 @@ require('Vista_Asignaturas.php');
   <div class="card-body">
 <!-- Tabla que muestra las asignaturas -->
 <div class="container">
-<table class="table table-hover ">
+<table class="table table-hover shadow p-4 mb-4 bg-white ">
    <thead class="thead-dark">
   <tr>
     <th>Nombre Asignatura</th>
