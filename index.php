@@ -1,7 +1,7 @@
 <?php 
 require('datos.php'); 
 require('usuarios.php');
-
+include("header.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,28 +15,6 @@ require('usuarios.php');
 </head>
 <body>
 
-	<div class="container">
-		<div class="page-header">
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="">Unisangil</a>
-					</div>
-					<ul class="nav navbar-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Usuarios</a></li>
-						<li><a href="#">Reportes</a></li>
-					</ul>
-
-					<form class="navbar-form navbar-right">
-						<input type="text" class="form-control" name="">
-						<input type="submit" class="btn btn-default" name="" value="Buscar">
-					</form>
-
-				</div>
-			</nav>
-		</div>
-	</div>
 
 <table class='table table-hover'>
   

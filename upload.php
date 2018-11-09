@@ -2,7 +2,7 @@
 // Configuración
 $folder = "uploads/"; // Carpeta a la que subir los archivos
 $maxlimit = 5000000; // Máximo límite de tamaño (en bits)
-$allowed_ext = "rar,jpg,jpeg,png,pdf"; // Extensiones permitidas (usad una coma para separarlas)
+$allowed_ext = "rar,jpg,jpeg,png,pdf,xls"; // Extensiones permitidas (usad una coma para separarlas)
 $overwrite = "no"; // Permitir sobreescritura? (yes/no)
 
 $match = ""; 

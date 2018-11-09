@@ -8,14 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-      margin: auto;
-  }
-  </style>
 </head>
 <body>
 
@@ -41,7 +33,6 @@
 	</div>
    
     <!-- Profile -->  
-
   <div class="container" >
 
     <div  align="right">
@@ -78,7 +69,6 @@
 <button class="btn btn-outline-primary">
     <a href="javascript:history.go(-1);">Atras</a>
 </button>
- </div>
  </div>
 </body>
 </html>
