@@ -1,5 +1,6 @@
 <?php 
 require('Vista_actividades.php'); 
+include('headeri.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -12,26 +13,6 @@ require('Vista_actividades.php');
 	<title>Vista actividad</title>
 </head>
 <body>
-	<div class="container mt-2 mb-2">
-		<div class="page-header">
-			<nav class="navbar sticky-top navbar-expand-sm bg-light navbar-dark">
-				<div class="container-fluid">
-						<a class="navbar-brand" href="">
-              <img src="img/user.png" style="width: 100px;">
-            </a>
-					    <ul class="navbar-nav">
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Home</a></li>
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Usuarios</a></li>
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Reportes</a></li>
-					    </ul>
-          		<form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
-				</div>
-			</nav>
-		</div>
-	</div>
 
 
 <!-- card de ver actividad, actividades evaluativas, registro de notas, registro de asistencia -->

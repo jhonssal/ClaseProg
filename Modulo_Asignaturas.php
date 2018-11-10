@@ -45,7 +45,8 @@ for ($i=0; $i < count($datovi); $i++) {
 ?>
 
 </table>
-  <button class="btn btn-outline-primary"><a href="javascript:history.go(-1);">Atras</a>
+  <button class="btn btn-outline-primary">
+    <a href="index.php">Atrás</a>
   </button>
   
 

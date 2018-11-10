@@ -16,9 +16,9 @@
               <img src="img/user.png" style="width: 100px;">
             </a>
 					    <ul class="navbar-nav">
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Quienes somos</a></li>
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Usuarios</a></li>
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Reportes</a></li>
+						    <li class="nav-item"><a class="nav-link text-primary" href="#">Quiénes somos</a></li>
+						    <li class="nav-item"><a class="nav-link text-primary" href="#">Informacion legal</a></li>
+						    <li class="nav-item"><a class="nav-link text-primary" href="#">Contáctenos</a></li>
 					    </ul>
           		<form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar">

@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<title>Registro de Notas</title>
+	<title>Actividades Evaluativas</title>
 </head>
 <body>
 
@@ -31,22 +31,23 @@
 		</div>
 	</div>
 
+
 	<!-- card de subir actividad, actividades evaluativas, registro de notas, registro de asistencia -->
 <div class="container-fluid my-3" style="width: 64rem">
 <div class="card">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
 			<li class="nav-item">
-				<a class="nav-link" href="Modulo_Asignaturas.php">Asignaturas</a>
+				<a class="nav-link" href="modulo_actividad.php">Actividades Creadas</a>
 			</li>
       <li class="nav-item">
-        <a class="nav-link" href="crear_actividad.html">Subir Actividad</a>
+        <a class="nav-link" href="crear_actividad.php">Subir Actividad</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="actividades_evaluativas.html">Actividades evaluativas</a>
+        <a class="nav-link active" href="#">Actividades evaluativas</a>
       </li>
  	  <li class="nav-item">
-        <a class="nav-link active" href="#">Registro de notas</a>
+        <a class="nav-link" href="registro_notas.html">Registro de notas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="registro_asistencia.html">Registro de asistencia</a>
@@ -54,6 +55,7 @@
     </ul>
   </div>
   <div class="card-body">
+
 
 
 </body>

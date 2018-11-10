@@ -1,3 +1,4 @@
+<?php include('headeri.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,27 +10,6 @@
 	<title>Subir Actividad</title>
 </head>
 <body>
-	<div class="container mt-2 mb-2">
-		<div class="page-header">
-			<nav class="navbar sticky-top navbar-expand-sm bg-light navbar-dark">
-				<div class="container-fluid">
-						<a class="navbar-brand" href="">
-              <img src="img/user.png" style="width: 100px;">
-            </a>
-					    <ul class="navbar-nav">
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Home</a></li>
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Usuarios</a></li>
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Reportes</a></li>
-					    </ul>
-          		<form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
-				</div>
-			</nav>
-		</div>
-	</div>
-
 
 <!-- card de subir actividad, actividades evaluativas, registro de notas, registro de asistencia -->
 <div class="container-fluid my-3" style="width: 64rem">
@@ -42,14 +22,11 @@
       <li class="nav-item">
         <a class="nav-link active" href="#">Subir Actividad</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="actividades_evaluativas.html">Actividades evaluativas</a>
-      </li>
  	  <li class="nav-item">
-        <a class="nav-link" href="registro_notas.html">Registro de notas</a>
+        <a class="nav-link" href="registro_notas.php">Registro de notas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="registro_asistencia.html">Registro de asistencia</a>
+        <a class="nav-link" href="registro_asistencia.php">Registro de asistencia</a>
       </li>
     </ul>
   </div>
@@ -115,11 +92,14 @@
     	<input type="file" class="custom-file-input" id="uploadFile" name="userfile">
     </div>
   </div>
-
+<div class="container-fluid" style="display: flex; justify-content: space-around; width: 100%" >
+    <button class="btn btn-outline-primary">
+    <a href="modulo_asignaturas.php">Atrás</a>
+    </button>
     <button type="submit" class="btn btn-primary">Enviar</button>
-  
+    
+</div>
 </form>
-
 
   </div>
 </div>
