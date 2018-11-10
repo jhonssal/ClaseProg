@@ -37,7 +37,7 @@
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
-        <a class="nav-link" href="Modulo_Asignaturas.php">Asignaturas</a>
+        <a class="nav-link" href="modulo_actividad.php">Actividades Creadas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#">Subir Actividad</a>

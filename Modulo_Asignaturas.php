@@ -23,18 +23,7 @@ include('headeri.php');
 			<li class="nav-item">
 				<a class="nav-link active" href="#">Asignaturas</a>
 			</li>
-      <li class="nav-item">
-        <a class="nav-link" href="crear_actividad.html">Subir Actividad</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="actividades_evaluativas.html">Actividades evaluativas</a>
-      </li>
- 	  <li class="nav-item">
-        <a class="nav-link" href="registro_notas.html">Registro de notas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="registro_asistencia.html">Registro de asistencia</a>
-      </li>
+      
     </ul>
   </div>
   <div class="card-body">

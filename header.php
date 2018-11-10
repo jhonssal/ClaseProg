@@ -16,7 +16,7 @@
               <img src="img/user.png" style="width: 100px;">
             </a>
 					    <ul class="navbar-nav">
-						    <li class="nav-item"><a class="nav-link text-primary" href="#">Home</a></li>
+						    <li class="nav-item"><a class="nav-link text-primary" href="#">Quienes somos</a></li>
 						    <li class="nav-item"><a class="nav-link text-primary" href="#">Usuarios</a></li>
 						    <li class="nav-item"><a class="nav-link text-primary" href="#">Reportes</a></li>
 					    </ul>
