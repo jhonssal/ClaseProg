@@ -21,10 +21,10 @@
 					<a class="nav-link" href="modulo_actividadest.php">Actividades</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="modulo_notasest.html">Ver Notas</a>
+					<a class="nav-link" href="modulo_notasest.php">Ver Notas</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Ver Asistencia</a>
+					<a class="nav-link active" href="#">Ver Asistencia</a>
 				</li>
 			</ul>
 		</div>

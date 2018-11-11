@@ -21,7 +21,7 @@ include('headeri.php');
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
-        <a class="nav-link" href="#">Actividades</a>
+        <a class="nav-link active" href="#">Actividades</a>
 			</li>
 			<li class="nav-item">
         <a class="nav-link" href="modulo_notasest.html">Ver Notas</a>
