@@ -22,7 +22,7 @@ $datovi = [$usuario1,$usuario2,$usuario3];
 
 function consultar_Asignaturas($datovi){
 	echo '<tr>';
-	echo '<td><a href="modulo_actividad.php"><img src="img/Folder.png" class="rounded" >'.$datovi->Asignatura.'</a></td>';
+	echo '<td><a href="modulo_actividadest.php"><img src="img/Folder.png" class="rounded" >'.$datovi->Asignatura.'</a></td>';
 	echo '<td>'.$datovi->Nombre_docente.'</td>';
 	echo '<td>'.$datovi->email.'</a></td>';
 	
