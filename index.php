@@ -1,5 +1,5 @@
 <?php 
-
+include("header.php");
 $alert ='';
 if(!empty($_POST))
 {
@@ -18,14 +18,24 @@ if(!empty($_POST))
     if($result > 0)
     {
       $data = mysqli_fetch_array($query);
+      session_start();
+      $_SESSION['active'] = true;
+      $_SESSION['idUser'] = $data['id'];
+      $_SESSION['user'] = $data['username'];
+      $_SESSION['rol'] = $data['tipo_usuario_id'];
 
-      print_r($data);
-
+      header('location: ..ClaseProg/Modulo_Asignaturasest.php' );
+      
+    }else{
+      $alert='Ingrese su usuario y su clave';
+    
     }
         
-      } 
+     
+  } 
+
 }
-include("header.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -88,17 +98,18 @@ include("header.php");
     <div class="col-5">
     <img src="img/icon.png" class="icono-form">
     <h1 class="registro-titulo">Bienvenido</h1>
-    <form class="registro-formulario" id="form-ingreso" action="">
+    <form class="registro-formulario" id="form-ingreso" action="" method="post">
         <input type="text" class="registro-input" placeholder="User" name=user>
         <input type="password" class="registro-input" placeholder="Password" name=pass>
+        <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
         <input type="submit" value="Ingresar" class="registro-btn btn-group">
+
        
     </form>
     </div>
                            
   </div>
 </div>
-
 
 </body>
 </html>
