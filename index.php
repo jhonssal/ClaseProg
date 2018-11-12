@@ -1,4 +1,32 @@
-<?php include("header.php"); ?>
+<?php 
+
+$alert ='';
+if(!empty($_POST))
+{
+  if(empty($POST['user']) || empty($_POST['pass']))
+  {
+    $alert='Ingrese su usuario y su clave';
+  }else{
+
+    require_once "conexion.php";
+    $usuarios=$_POST['user'];
+    $contrasena=$_POST['pass'];
+
+    $query = mysqli_query($conexion,"SELECT * FROM usuario WHERE username= '$usuarios' AND password = '$contrasena'");
+    $result = mysqli_num_rows ($query);
+
+    if($result > 0)
+    {
+      $data = mysqli_fetch_array($query);
+
+      print_r($data);
+
+    }
+        
+      } 
+}
+include("header.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -60,9 +88,9 @@
     <div class="col-5">
     <img src="img/icon.png" class="icono-form">
     <h1 class="registro-titulo">Bienvenido</h1>
-    <form class="registro-formulario" id="form-ingreso" action="/ClaseProg/Modulo_Asignaturas.php">
-        <input type="text" class="registro-input" placeholder="User">
-        <input type="password" class="registro-input" placeholder="Password">
+    <form class="registro-formulario" id="form-ingreso" action="">
+        <input type="text" class="registro-input" placeholder="User" name=user>
+        <input type="password" class="registro-input" placeholder="Password" name=pass>
         <input type="submit" value="Ingresar" class="registro-btn btn-group">
        
     </form>
