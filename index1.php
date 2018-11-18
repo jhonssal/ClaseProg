@@ -66,8 +66,8 @@ require_once("localhost.php");
     <img src="img/icon.png" class="icono-form">
     <h1 class="registro-titulo">Bienvenido</h1>
     <form class="registro-formulario" id="form-ingreso" action="" method="post">
-        <input type="text" class="registro-input" placeholder="User" name="username">
-        <input type="password" class="registro-input" placeholder="Password" name="password">
+        <input type="text" class="registro-input" placeholder="User" name="nusuario">
+        <input type="password" class="registro-input" placeholder="Password" name="cusuario">
         
         <input type="submit" value="Ingresar" class="registro-btn btn-group">
 

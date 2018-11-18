@@ -3,16 +3,56 @@ $servername = "localhost";
 $database = "colegio";
 $username = "root";
 $password = "mysql";
+/*
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully";
+//echo "Connected successfully";
+
 //select database
 $db = mysqli_select_db( $conn, $database ) or die ( "Upps! Something went wrong" );
+*/
 
+$con = mysqli_connect($servername, $username, $password, $database);
+try{
+    $conn = new PDO('mysql:host=localhost;dbname=colegio', $username , $password);
+    echo 'Conexion realizada';
+   }            
+catch (PDOException $ex) {
+      echo $ex->getMessage();
+      exit;
+   }
+
+/* @var $_POST type */
+$nombre= $_POST["nusuario"];
+$pass= $_POST["cusuario "];
+
+
+$query=("SELECT username,password FROM `usuario` "
+        . "WHERE `username`='".mysqli_real_escape_string($con, $nombre)."' and "
+        . "`password`='".mysqli_real_escape_string($con, $pass)."'"); 
+
+$rs= mysqli_query($con, $query); 
+$row=mysqli_fetch_object($rs); 
+$nr = mysqli_num_rows($con, $rs);
+
+
+if($nr == 1){ 
+  
+echo 'No ingreso'; 
+} 
+
+else if($nr == 0) {    
+    
+    header("Location:Modulo_Asignaturas.php"); 
+}   
+
+
+
+/*
 // establecer y realizar consulta. guardamos en variable.
 $consulta = "SELECT persona.nombre, persona.apellido, usuario.username, usuario.password, tipo_usuario.tipo_usuario 
 from persona 
@@ -40,7 +80,7 @@ while ($columna = mysqli_fetch_array( $resultado ))
 }
 
 echo "</table>"; // Fin de la tabla
+*/
 
-
-mysqli_close($conn);
+//mysqli_close($conn);
 ?>
