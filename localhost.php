@@ -3,20 +3,16 @@ $servername = "localhost";
 $database = "colegio";
 $username = "root";
 $password = "mysql";
-/*
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-//echo "Connected successfully";
-
-//select database
-$db = mysqli_select_db( $conn, $database ) or die ( "Upps! Something went wrong" );
-*/
 
 $con = mysqli_connect($servername, $username, $password, $database);
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+//mysqli_close($con);
+
+
+
+/*
 try{
     $conn = new PDO('mysql:host=localhost;dbname=colegio', $username , $password);
     echo 'Conexion realizada';
@@ -26,12 +22,12 @@ catch (PDOException $ex) {
       exit;
    }
 
-/* @var $_POST type */
+// @var $_POST type 
 $nombre= $_POST["nusuario"];
 $pass= $_POST["cusuario "];
 
 
-$query=("SELECT username,password FROM `usuario` "
+$LoginRS__query=("SELECT username,password FROM `usuario` "
         . "WHERE `username`='".mysqli_real_escape_string($con, $nombre)."' and "
         . "`password`='".mysqli_real_escape_string($con, $pass)."'"); 
 
@@ -50,7 +46,7 @@ else if($nr == 0) {
     header("Location:Modulo_Asignaturas.php"); 
 }   
 
-
+*/
 
 /*
 // establecer y realizar consulta. guardamos en variable.
@@ -82,5 +78,5 @@ while ($columna = mysqli_fetch_array( $resultado ))
 echo "</table>"; // Fin de la tabla
 */
 
-//mysqli_close($conn);
+
 ?>
