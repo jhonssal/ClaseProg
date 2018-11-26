@@ -37,7 +37,7 @@ $query=("SELECT username,password FROM `usuario` "
 
 $rs= mysqli_query($con, $query); 
 $row=mysqli_fetch_object($rs); 
-$nr = mysqli_num_rows($con, $rs);
+$nr = mysqli_num_rows($rs);
 
 
 if($nr == 1){ 
@@ -47,7 +47,7 @@ echo 'No ingreso';
 
 else if($nr == 0) {    
     
-    header("Location:Modulo_Asignaturas.php"); 
+   // header("Location:Modulo_Asignaturas.php"); 
 }   
 
 

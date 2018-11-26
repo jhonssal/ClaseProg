@@ -1,36 +1,6 @@
 <?php 
 include("header.php");
-include_once 'user.php';
-include_once 'user_session.php';
 
-$userSession = new UserSession();
-$user = new User();
-
-if(isset($_SESSION['user']))
-{
-    //echo "hay sesión";
-}else if(isset($_POST['username']) && isset($_POST['password'])){
-   //echo "validacion de login";
-
-   $userForm = $_POST['username'];
-   $passForm = $_POST['password'];
-
-   if($user->userExists($userForm, $passForm))
-   {
-     //echo "usuario validado";
-     $userSession->setCurrentUser($userForm);
-     $user->setUser($userForm);
-     
-     include_once 'Modulo_Asignaturasest.php';
-   }else
-   {
-     echo "nombre de usuario y/o password incorrecto";
-   }
-
-
-}else{
-  //echo "login";
-}
 
 ?>
 <!DOCTYPE html>
@@ -94,9 +64,9 @@ if(isset($_SESSION['user']))
     <div class="col-5">
     <img src="img/icon.png" class="icono-form">
     <h1 class="registro-titulo">Bienvenido</h1>
-    <form class="registro-formulario" id="form-ingreso" action="" method="post">
-        <input type="text" class="registro-input" placeholder="User" name="username">
-        <input type="password" class="registro-input" placeholder="Password" name="password">
+    <form class="registro-formulario" id="form-ingreso" action="validar.php" method="post">
+        <input type="text" class="registro-input" placeholder="User" name="usuario">
+        <input type="password" class="registro-input" placeholder="Password" name="clave">
         <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
         <input type="submit" value="Ingresar" class="registro-btn btn-group">
 
