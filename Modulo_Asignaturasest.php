@@ -30,26 +30,38 @@ include('headeri.php');
   <div class="card-body">
 
   <div class="container">
-<table class="table table-hover shadow p-4 mb-4 bg-white ">
-   <thead class="thead-dark">
-  <tr>
-    <th>Nombre Asignatura</th>
-    <th>Nombre docente</th>
-    <th>Email</th>
-  </tr>
-  </thead>
+  <?php
+  
+require('localhost.php'); 
+  // establecer y realizar consulta. guardamos en variable.
+$consulta = "SELECT * from asignatura ";
 
-<?php
-for ($i=0; $i < count($datovi); $i++) { 
-  consultar_Asignaturas($datovi[$i]);
+$resultado = mysqli_query($con, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
+// Motrar el resultado de los registro de la base de datos
+// Encabezado de la tabla
+echo "<table class=  shadow p-4 mb-4 bg-white  >";
+echo "<thead class=thead-dark>";
+echo "<tr>";
+echo "<th>Nombre</th>";
+echo "<th>Docente</th>";
+echo "<th>Correo</th>";
+
+echo "</tr>";
+echo  "</thead>";
+
+// Bucle while que recorre cada registro y muestra cada campo en la tabla.
+while ($columna = mysqli_fetch_array( $resultado ))
+{
+    echo "<tr>";
+    echo "<td><a href=modulo_actividadest.php><img src=img/Folder.png class=rounded >" . $columna['nombre'] . "</a></td>";
+    echo "</tr>";
 }
-?>
 
-</table>
-  <button class="btn btn-outline-primary"><a href="javascript:history.go(-1);">Atras</a>
-  </button>
-</div>
-</div>
+echo "</table>"; // Fin de la tabla
+
+?>
+<div> <button class="btn btn-outline-primary"><a href="javascript:history.go(-1);">Atras</a>
+  </button> </div>
 </div>
 </div>
 
