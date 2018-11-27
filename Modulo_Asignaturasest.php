@@ -54,7 +54,7 @@ echo  "</thead>";
 while ($columna = mysqli_fetch_array( $resultado ))
 {
     echo "<tr>";
-    echo "<td><a href=modulo_actividadest.php><img src=img/Folder.png class=rounded >" . $columna['nombre'] . "</a></td>";
+    echo "<td><a href=modulo_actividad.php><img src=img/Folder.png class=rounded >" . $columna['nombre'] . "</a></td>";
     echo "</tr>";
 }
 
