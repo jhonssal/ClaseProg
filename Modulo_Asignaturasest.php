@@ -39,8 +39,9 @@ $consulta = "SELECT * from asignatura ";
 $resultado = mysqli_query($con, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
 // Motrar el resultado de los registro de la base de datos
 // Encabezado de la tabla
-echo "<table class=  shadow p-4 mb-4 bg-white  >";
+echo "<table class= table table-hover shadow p-3 mb-5 bg-white rounded >";
 echo "<thead class=thead-dark>";
+
 echo "<tr>";
 echo "<th>Nombre</th>";
 echo "<th>Docente</th>";
